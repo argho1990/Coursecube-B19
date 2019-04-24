@@ -1,0 +1,15 @@
+Binding data and behaviour in class in called Encapsulation.
+Binding state and behaviour of an object in one entity is called as Encapsulation.
+Or u can say writing a class into variables and methods is also called as Encapsulation.
+
+But data will be hidden inside the class only and methods will be exposed outside.
+Inheritance:Using existence class functionality is called Inheritance.
+In Polymorphism, one object behaving differently in different situations is called polymorphism.
+
+
+And 116 page No.We have seen what is a class,what is an object and how to write a  class,how to write an object.
+Creating instance allocating memory for reference variable.
+
+
+
+

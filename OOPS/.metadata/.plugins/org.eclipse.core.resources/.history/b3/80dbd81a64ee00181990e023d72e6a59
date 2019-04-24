@@ -1,0 +1,36 @@
+package c3.Contructors;
+
+
+/* 
+ * Constructors:
+ * Constructors are the special methods whose name is same as class name.
+ * Constructors do not have return type even void.
+ * Constructors will be invoked by the JVM automatically at the time of object creation.
+ * Constructors are mainly used to initialize instance variables of class with different set of values.
+ *  
+ */
+
+
+ class Student{
+	 
+	 int cid;
+	 String cname;
+	 void show(){
+	 System.out.println( cid +"\t"+ cname);	 
+	 	 
+	 }
+	 
+	 
+ }
+
+
+public class Lab260 {
+
+	public static void main(String[] args) {
+		Student stu1 = new Student();
+        stu1.show();
+        Student stu2 = new Student();
+        stu2.show();
+	}
+
+}

@@ -1,0 +1,15 @@
+INDEX VERSION 1.4+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3705611006.index
+3573285090.index
+147281095.index
+996610041.index
+2883064424.index
+2143315025.index
+1878519753.index
+2725142083.index
+1723423113.index
+1281376111.index
+1259207542.index
+1197959925.index
+3806213177.index
+3580456661.index

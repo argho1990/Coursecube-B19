@@ -1,0 +1,17 @@
+What is java synchronized keyword, examples of using Java synchronized method and blocks, 
+What can happen in multithreading code in absence of synchronized constructs, 
+tips to avoid mistakes, while locking critical section in Java and some of important points about synchronization in Java.
+
+
+Since Java provides different constructs to provide synchronization and locking 
+e.g. volatile keyword, atomic variable, explicitly locking using 
+
+java.util.concurrent.lock.Lock interface and 
+there popular implementations 
+E.g. ReentrantLock and ReentrantReadWriteLock
+
+
+
+
+
+

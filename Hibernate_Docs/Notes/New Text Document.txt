@@ -1,0 +1,21 @@
+ORM Tool: Hibernate is something called an ORM tool.
+Hibernate is much more than an Hibernate Tool there are much more features that 
+have been added over the years.
+But when it first started it started as an ORM tool.
+It used primarly in the Data Layer of Applications where you want to persist your application 
+data to a database.
+Implements JPA.(Java Persistence API)
+This is a set of standards that have been prescribed for any persistence of implementation that 
+needs to met in order to get certified as a Java Persistence API Implementation so that means is that
+it follows the rules that have been set in the JAVA Persistence API Specification,so later if you dont
+want to use hibernate some other provider which implements the same java persistence API,you can do 
+that with minimal code changes.
+
+What is an ORM Tool and why it is required?
+What is the problem that hibernate is trying to solve?
+
+
+
+
+
+

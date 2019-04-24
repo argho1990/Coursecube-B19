@@ -1,0 +1,59 @@
+package com.jlcindia.p2;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+public class AddServlet extends HttpServlet{
+	 public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException, ServletException {
+		 int i = Integer.parseInt(req.getParameter("num1"));
+		 int j = Integer.parseInt(req.getParameter("num2"));
+		 
+		int k = i + j;
+		req.sendRedirect("sq");
+		//req.setAttribute("k", k);
+		
+		/*
+		 How to call square servlet?
+		  To call the servlet we have 2 options:
+		  ReqDispactcher and redirect
+		  dispatching the request from  servlet to another servlet
+	      Print the data on the 2nd Servlet.
+		  How will you get the instance of RD because(RD) is an Interface?
+		  There is a method called getRequestDispatcher,this will give you the 
+		  instance of RD.
+		 */
+	/*	  Request Dispatcher is forwarding req and res object right and the same two objects 
+	      are being used here(Square)
+	      We can put some data in the request object anyways we are passing that object.
+	      
+	      
+	*
+	*
+	*
+	*/    
+	//	  RequestDispatcher rd = req.getRequestDispatcher("sq"); //Mention the url.
+	//	  rd.forward(req,res);//Send the request and response object.
+		  //Pass "k" value to the SQL servlet.
+          //How will you do that?
+		 
+		  
+		  //This is the key("k") and this is the value(k);
+		  //So you are passing a "k" value and whatever you are passinf from the user.
+		  // and you are naming that "k" and you are refer this on another servlet.
+		  //You can refer that with k.
+		  // So basically we are able to send value from AddServlet to Square Servlet.
+		  //But how will you fetch it in Square.java.
+		  // See (square.java)
+		  
+//Session Management:
+		  //When we want to send data from one servet to another,
+		  //When you want to share between different servlets.
+		  //We use the concept of servlets.
+		  
+              
+	 }
+
+}

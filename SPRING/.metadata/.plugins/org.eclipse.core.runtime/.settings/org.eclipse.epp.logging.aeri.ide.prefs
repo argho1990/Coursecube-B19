@@ -1,0 +1,10 @@
+anonymizeMessages=true
+anonymizeStackTraces=true
+debugEnabled=false
+disableAutomaticWiringAnalysis=false
+eclipse.preferences.version=1
+reporterEmail=ticklu1990@gmail.com
+reporterName=Rajat Sengupta
+resetSendMode=KEEP
+resetSendModeOn=0
+sendMode=NOTIFY

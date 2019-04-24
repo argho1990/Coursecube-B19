@@ -1,0 +1,59 @@
+Members of class [31 August 6:57]
+
+Binding data and behaviour in class in called Encapsulation.
+Binding state and behaviour of an object in one entity is called as Encapsulation.
+Or u can say writing a class into variables and methods is also called as Encapsulation.
+
+But data will be hidden inside the class only and methods will be exposed outside.
+Inheritance:Using existence class functionality is called Inheritance.
+In Polymorphism, one object behaving differently in different situations is called polymorphism.
+
+
+And 116 page No.We have seen what is a class,what is an object  and how to write a  class,
+how to create an object and how to access the members.
+
+Then when you create an object what is happening :
+Creating instance, allocating memory for reference variable
+
+And creating object:
+Allocating memory for all instance variables of the class(only instance variables of the class),not static.
+Assigning object address to refernce variable.
+These 3 things happening when you create an object in a given class.
+
+Page No118:
+When you write a class,it can contain five types of members:
+U can declare 
+the variables
+write the blocks
+add constructors,methods and classes again.
+class inside a class.
+
+So class can have five types of members.(variables,methods,blocks,constructors and inner classes)
+
+We will start landing one by one
+Will start with the variables
+
+CB 1
+<>
+What kind of variable a is ??
+We can say it is an instance variable,because declared inside the class directly.
+and not having the static keyword,so instance variable.
+<>
+this also instance variable we will make  as static keyword.
+So we have one instance variable and one static variable.
+
+I am taking a method <> just printing 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

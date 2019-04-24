@@ -1,0 +1,389 @@
+The user in this case went to a website wsf website.
+typed that im and hit enter.
+All of is happening before the user sees anything is
+The user is asking for a website or requesting it.
+Then when it is called an HTTP Request.
+So when I opened up this video 
+www.youtube.com/watch?v=WwyJGzZmBe8
+^----------------------------------this url
+When I hit enter I ask for the contents of this page.
+And that has to go all the way towards youtube somewhere.
+They have to send it all the way back to me.
+So far we are getting the request to the right place.
+
+So at this point the request has made it all the way to  
+the correc server.
+And it has told that I am looking for this page.
+And now everything is on the return journey.
+going from the server all the way back to the computer.
+that asked for this specific page.
+
+Lets take this example:
+when i go to this url.
+www.udemy.com/courses
+Remember I am asking for something and getting something back.
+I am requesting something and the server is responding,
+And there is a lot of stuff that happens in between thats the core concept.
+
+So the very first step that happens :
+Request and Responses:
+Asking for data and the server giving you the data
+And then your browser displaying it.
+When I go to a URL,I hit enter 
+The first thing that happens is
+My computer needs to know the exact address to send a request to
+which is just like when you send a letter you need to have a 
+unique address.
+No home has the same address as another home.
+They might look the same but they are in a different city or  different zipcode.
+or different country.
+They are unique.
+So we need that address so that our request goes to the right place.
+
+So this thing called DNS it takes that domain name here(Udemy.com ) and translates that it into an
+IP Address which is a String of number and dots.
+
+This is a Unique Identifier.
+Once we have that then we actually send a letter.
+Its when we actually make the request.
+So in this case when I hit enter,I am figuring out,computer is figuring out.
+What is www.udemy.com IP Address.
+Okhie we have the IP Address.
+So lets send our request asking for the courses page.
+So we make a request with a HTTP request.
+We will take a lot about and what that is and what they look like.
+And remember its not just one way direct shot there.
+Basically they request bounces around from server to server until we get
+to the server we are looking for.
+
+So when we get to the server :
+the first part is the server is gonna figure out what am I asking for.
+
+Am I asking for the homepage
+Am I asking for /courses.
+Am I asking for /signup page.
+Becoming an instructor page.
+
+There are all sorts of different pieces here.
+And they are all different.
+
+So the servers job is to figure out what to send back.
+When we do backend developement that will be your job.
+figuring out what content to send back.
+So then the  server often interacts with the database pulls out
+information and the server responds with any combination of
+HTML,CSS and Javascript.
+
+So then our server responds back.
+It sends us the combination of HTML,Javascript and CSS.
+Its a bunch of code.
+Not readable for humans.
+Our browser steps in and turns into this.
+Its a whole job of a browser.
+takes that information and makes it easy to understand for humans.
+So this process happens on every single page you visit. 
+
+You can actually see the underlying HTML and CSS on any page & Javascript.
+Few ways of doing it.
+In chrome we can go this page here...
+Right Click and view page source.
+And it opens up a new window.
+that actually contains all of HTML and CSS,Javascript that is underlying source 
+for this page.
+Samething on youtube.
+Right Click view page source.
+So this is on evey site.
+So there is no way to hide this.
+The whole job of the browser takes this and turns on into this.
+So browsers and definitely complicated things.
+The good thing is "You dont have to know how it works".
+Thats the whole job of a browser its takes that code and it turns on 
+into this.
+There is a short cut in Chrome  Cmd + U.
+
+And then what is the difference between HTML,CSS and Javascript.
+And what are their respective roles.
+So lets start by discussing Front End Vs Backend.
+
+So when I go to a URL.
+Say I go to facebook :
+I hit facebook.com and Hit Enter.
+And if you remember on how the web works.
+I create a Http request asking for facebook.com
+That goes to facebook server eventually 
+Facebook then decides what page to send me back.
+So in the case of facebook,it is figure out what images,
+what stories how many likes they have what friends I have.
+What posts are at the top?
+All my settings and profile pictures.
+All the stuff that pertains to me and then it send it back to me.
+Sends me HTML,CSS and Javascript.
+My browser displays that for me.
+So this diagram here kinda explains difference between Front End
+and Backend where everything that I get back and I see in the browser
+is HTML,CSS and Javascript.
+Just the tip of the iceberg but this is what my browser sees.
+It is the front end or the Client Side.
+It is constructed by the back end.
+Everything else that happens all the logic figuring out if I logged in
+figuring out what my friends are photos I have,what posts I posted 
+How many likes they have.
+All of that comes from the backend server side logic.
+So you can see there is a lot more here.
+There are so many choices on technologies.
+On the front end there is not.It is always [HTML,CSS and Javascript]
+
+On the backend there are different languages like python,PHP,Ruby,Javascript
+which we are going to use.
+There is different data-bases.
+You have got Postgress,Mongo,CouchDB,MYSQL,SQLite.
+There are so many choices.
+So its a little intimidating.
+We are gonna talk a lot more on the backend when we get to the unit.
+But for now just remember that the backend is what instructs the HTML and CSS
+that it sends back.
+So lets take an example here:
+So one of my fav restaurants is called Lazy Bear.
+
+-----------------------------------------------------------
+
+This page is always the same.This could be changed but in order for to
+be changed the developer has to go to the HTML and manually change it.
+So basically I refresh the page I get the same home page.
+
+I get the same frequently asked questions the same contact us page.
+Thats not a bad things but it doesnt need to change.Thats just a
+restaurant web page.
+-----------------------------------------------------------
+However the yelp page for lazy bear is dynamic.
+It does change.
+So anytime a new review is written its gonna show up here.
+Things are dynamics here,they are happening all the time.
+I would say that was a usefull review.
+That was a funny review.
+
+Those votes that are voted are stored in the database.
+Something is happening I am interacting with this and it is 
+persisting.
+If I refresh the page now its different.
+Not very different but as before I dint think
+this is funny,now I remember its funny.
+Now basically the point is when I go to this page,
+I ask for this URL,yelp doesnt send me the exact samething back.
+Its gonna figure out,is the user logged in,if so we wanna put his 
+profile picture up here.
+Has he voted on anything.
+Yes,lets make sure that we highlighted correctly.
+Changed the colour,dont let him vote again.
+And so on it contructs the HTML,CSS and Javascript.
+and it sends it back.
+So another example of a page that is definitely dynamic 
+is google news.
+Everytime I refresh,every 5 minutes something refreshes here,
+whether its the weather here,FL scores,news story.
+
+However this is all the same[lazy bear].
+So the difference is 2 things
+1. A Static Page vs Dynamic Page.
+2. Both of them are web pages,both of them are HTML,CSS and Javasript 
+   coming back.
+3. One is gonna change based of some sort of server side code,something on the backend.
+   I like this.
+4. I also like this technology of a restaurant.
+
+5. So if imagine you go to a restaurant you sit down.
+   Lets say you order a stake. 
+   When you order that stake,you are making request that goes back to the kitchen
+   The kitchen prepares everything for you,that sort of the backend,it decides what
+   incrediants to get.How long to cook them.
+   Plates everthing on a plate and then a waitress comes and brings that to your table.
+   So,its very similar you make a request the shief or the kitchen is the server.This
+   part of the iceberg that is concacting everything cooking it,putting it together.
+   
+   And finally it is sent back to your table which is you on the client side.
+
+   So now lets break down those 3 pieces HTML,CSS and Javascript.
+   HTML stands for Hyper Text MarkUp Langauge.
+   Basically imagine that this is what happened 
+   In the ealry days of the Internet,there was no standardized way to
+   send information and to send documents.So initially Internet was used to
+   send,to communicate between Universities and Colleges.
+   And also as military tool,
+   
+   So lets just say I want to send this to a friend.
+   I need to say this is bolded.
+   These are little bullet points.
+   I have got some texts and quotes around this.
+   I need that to break that down and describe it  to send to somebody else.
+   And the solution was HTML.
+   So,HTML is the easiest thing we are going to learn.
+   No to say that it is insanely easy.
+   But it is very simple.In that we just descibe what we want.
+   And what you write is what you get.
+   So,HTML is often referred to the nouns of a webpage.
+   Is the structure some people say the skeleton.
+   Put a image here,put a bullet here,put a heading here.
+   A slightly smaller heading just below there.
+   It allows you to describe the structure of a page.
+   
+   CSS is on the other hand how we describe the style of a page.
+   I need HTML to use CSS.
+   CSS on its own doesn't really do anything at all.
+   Every single web page is HTML.
+   Some web pages dont have CSS,some dnt have javascript.
+   Its not mandatory HTML is.
+   So CSS,cascading style sheets learn exactly where that name comes from.
+   Basically its styles existing HTML.
+   So you can say things like  make all those bullet point screen,give the first
+   image a yellow border,give the last image big pink border with dashes through it.
+   Its often considered the additives of a webpage or some people would say the skin 
+   to the HTML skeleton.
+   
+   And the last piece here is Javascript.
+   Javascript is the most complex thing out of these three:
+   Its how we add logic and interactivity to a page.
+
+   So with CSS and Javascript we can make a beautifull looking site.
+   But it not going to do anything we can do simply animations.
+   We can't load data from somewhere else.
+   We can't add interactivity to a page.
+   We can't have logic or have a game.
+   With javascript we can:
+   Some of the examples are :
+   Get the current weather,get the current FL Scores.
+   
+   
+   If HTML is the nouns,CSS is the additives.
+   and Javascript are the verbs or the actions 
+   on a Page.
+
+   All wrapped up nicely in a Codepen.
+   Write simple pages in the browser.
+   Get rid of CSS And Javascript.
+   Plain black and white structural material
+   I am specifying my content,so these are my words and I am wrapping those
+   words in specific stuctural elements.
+   So in <h1> Make big texts here.
+   <ul>Make a list </ul>
+   <li>Make individual list item,that says make me a bullet point</li>
+   <li>Make individual list item,that says make me another bullet point</li>   
+   <button>Make me a buttion</button>
+   
+   So on its own thats just the structure.
+   
+   CSS:[self_explanatory]
+   So thats our additives.
+    
+   Javascript: So without javascript that button does nothing.
+   Now what we have done.
+   When the user clicks the button.
+   Pick a random colour and change the background colour here
+   to that random colour.
+   If I get rid of this javascript I would try to do that again nothing happens.
+   Because I dont have any verbs.
+   Its just nouns and additives.
+   Just the structural skeleton.
+   Little bit of skin on-top.
+   As I add my javascript in I can add the logic.
+   Basically a high-level overview of what HTML does,CSS does and Javascript does.
+   
+   Two tools we are going to use for the rest of the course:
+   
+   When we are developing web applications we need a place to 
+   write our code which should be a [text editor].
+   And we need a place to view our code which should be web-browser.
+   
+   Use google chrome for 2 reasons:
+   1.We just wanna have a standardized browser,so that if I did something I show a shortcut.
+   I show the developer tools,I do something with one of the menus that you can replicate yourself.
+   2.Google chrome/Mozilla Firefox is used by a lot of developers. 
+   Both of them are solid offerings specially with their developer tools.
+   which we gonna learn lot about when we move forward.
+   Basically dev tools are tools made for developer.
+   
+-------------------------------------------------------------------
+
+ 
+   
+  
+     
+
+   
+    
+    
+   
+   
+   
+     
+   
+    
+   
+   
+   
+   
+      
+    
+   
+   
+
+   
+   
+   
+   
+
+
+   
+ 
+
+      
+  
+
+
+
+   
+  
+ 
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+ 
+
+
+
+When i go to a url,lets say I go to facebook
+I hit facebook.com I hit Enter.
+I create a Http request asking for facebook.com

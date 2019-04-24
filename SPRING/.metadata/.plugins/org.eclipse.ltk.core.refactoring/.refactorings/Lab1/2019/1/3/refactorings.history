@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Lab2/src/com.jlcinidia.spring&apos;&#x0D;&#x0A;- Original project: &apos;Lab1&apos;&#x0D;&#x0A;- Destination element: &apos;Lab2/src/com.jlcinidia.spring&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.jlcindia.spring.A.java&#x0D;&#x0A;     com.jlcindia.spring.B.java&#x0D;&#x0A;     com.jlcindia.spring.Hello.java" description="Copy compilation units" destination="=Lab2/src&lt;com.jlcinidia.spring" element1="/src&lt;com.jlcindia.spring{A.java" element2="/src&lt;com.jlcindia.spring{B.java" element3="/src&lt;com.jlcindia.spring{Hello.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1547587795920" units="3" version="1.0"/>
+</session>

@@ -1,0 +1,137 @@
+Page 1:
+In class,class lab225[sic],Encapsulation is writing a class.
+I am writing a simple class called customer,so I am taking one object called Customer
+Encapsulating that now,Encapsulation is writing a class called Customer 
+And inside a customer what you can do.
+Describe something,its state and behaviour
+Means you have to declare the variables for recording the state and data and write the methods for implemeting its behaviour.
+So what  data you want to store for the customer I want to store
+<1>
+
+These four things I want to store about the customer.
+This is the state.
+Then one operation currently just I am showing the customer data
+just printing in the customer data.I am printing in one line format<2>
+concatenation also you know:
+-------->(cid + "\t" + cname + "\t" + email + "\t" + phone )
+
+I should have a simple class like this save this with the name.(lab225.java)
+To test the customer class you have to take the object of customer class.
+customer cust = new customer();
+With that u can call 
+show method cust.show();
+
+calling show method of customer.
+Customer class having 4 variables and one method and 1 method.
+Crearting customer method,calling show what it will display now.
+What is the cid value when memory allocated for cid.what is the value of cid.
+cid is integer right what is the value inside cid.=>0
+cname=>null]
+email=>null
+phone=>0
+That only will be displayed right,compile and run now.
+
+So what is the use of creating customer object (with the default values)?
+No use right if you create a customer object if you will create a customer class object it is allocating memory for
+cid
+cname
+email & phone.
+
+1 Customer data has to be stored in this.
+and if I have hundred customers then how many objects required?
+Can I store 100 customer data  in 1 customer object.
+
+Page 2:
+
+This is called as state of an object.<1>
+This is only one function [pause]behaviour.<2>
+
+You should know that what variables to write what methods to write.
+How much data to store so when you describe your entity.
+
+Now when you creating object say
+
+classname variable = new classname.
+This is the way to create right.
+changes internally if u write this [see RN] 
+1 you say 
+new Hello is 2
+Something like this we discussed somewhere arrays case.
+
+Similar idea.
+What happens Hello h?
+what is h now?
+reference variable of hello class.
+reference variable of any class it will take only 8 bytes of memory,default value as null,name is h.
+1 is done
+2nd new Hello();
+what is the use of new operator?
+new operator is used to create object?
+also we have written another line 
+under new operator-- allocating memory for instance variables of the class.
+class I have two types of variables.
+Instance or Static:
+new operator is used to allocate the memory only for the instance variables of the class not the static variables
+Whether this two(int a , int b) are instance or static.
+So instance variables.
+So new operator will allocate.
+Whenever you say new and class name,it checks that in this class Hello any instance variabels available or not.
+Yes,available,then memory has to be allocated for this,then we take on room here.
+In this room,memory will be allocated for "a" memory will be allocated for "b".
+How much memory for "a" -->4 bytes because its is integer,b also 4 bytes and default value as 0.
+So,all the instance variables got the memory for new.
+a has memory at some place,a address is differnt
+b address is different now 
+what address will be stored in h?
+address of the block.
+See diag.
+
+Because an object we have lot of elements like this(a,b)
+It cannot store multiple addresses here.
+So,its creating one big room,in this it will allocate memory for N no of instance variables.
+If we have 10 instance variables here it will allocate memory for all 10 instance variables here in one block
+That block address will be assigned here[3] i.e. by the (assignment operator).
+
+So,I created one object I have some "a" value and "b" value (a = 10 and b =20)
+I got one set of data now.
+I want to store this "a" how can I store now?
+I created object like this (1a)
+I creating object here(1b)
+I have to initialize this now.
+So you can access the variable of 
+h.a = 10, h.b = 20;
+
+So h.a means this "a" changed to 10.
+     h.b means this "b" changed to 20.
+
+Now I got another set of data "a" value 100,"b" value 200 
+where can I store that now,where can I store this data
+Can I store here only,what happens now?
+h.a=100 if I say this data will go right,I store this object 
+1 set is there right.
+Dont disturb this.
+I want another (a,b)
+I have to store this another object.
+Another object is required again you have to create another object
+You create another object.
+Hello h1 =  Hello();
+You create another object now
+
+ 
+
+
+  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 

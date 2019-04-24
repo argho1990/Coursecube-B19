@@ -1,0 +1,43 @@
+//Abstract Class and Abstract Methods Part 2:
+
+package com.telusko.basics;
+
+public class Abstract2 {
+
+	public static void main(String[] args) {
+	
+		 Iphone obj = new Iphone();
+         show(obj);  
+         Samsung obj1 = new Samsung();
+         show(obj1); 
+	}
+         public static void show(Iphone obj) {
+		 obj.showConfig();
+		
+	}
+         
+         public static void show(Samsung obj) {
+    	 obj.showConfig();
+    		
+    	} 
+	
+}
+
+
+class Iphone{
+	
+	public void showConfig() {
+		
+		System.out.println("2 GB,IOS 9.3");
+		
+	}
+}
+
+class Samsung{
+	
+	public void showConfig(Samsung obj) {
+		
+		System.out.println("2 GB RAM,Lollypop ");
+		
+	}
+}

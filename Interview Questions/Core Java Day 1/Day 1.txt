@@ -1,0 +1,47 @@
+JSTL:
+JSP Standard Tag Libaray:
+
+**************************************************************
+Core jstl tags:
+<c:set...>:
+<c:set var="dummyName" value="dummyValue2">
+ is used to create a variable in JSP in var
+ & value is used to assign the value.
+
+Just like in scriplet we create a variable.
+ <%
+ int i=0;
+ %>
+ we define variables.  
+ Best practise of JSP avoid java code.
+
+<c out:...>
+is used to print the value of something(dummyName) to the page
+<c:out value="${dummyName}">No name</c:out>
+Works as if loop if the value is above (value=)in is present it prints
+the above value(cin) or the value mentioned in c out since
+value=null.
+
+Before we use a JSTL tag we need to do a small import.
+We  need to define the tag library.
+<%@ taglib prefix="c" uri ="http://java.sun.com/jsp/jstl/core"%>
+Can use anything,but Convention is to use c for the "Core Library".
+
+Variable assignment and printing but with a tag.
+******************************************************************
+
+if
+
+forEach 
+
+choose 
+
+when 
+
+
+otherwise
+
+
+
+What is difference between Vector and ArrayList in Java?
+synchronization and speed

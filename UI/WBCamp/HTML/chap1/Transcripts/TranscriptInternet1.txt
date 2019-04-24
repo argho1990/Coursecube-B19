@@ -1,0 +1,145 @@
+have you ever wondered what happens when someone in England visits the world science festivals webpage first their
+
+computer needs to ask the world science
+
+festival server for a copy of that
+
+webpage the computer sticks this request
+
+into a virtual envelope called the
+
+packet wrapped with specific information
+
+about that request including the world
+
+science festivals IP address the
+
+computer sends this packet out of the
+
+house and below the street via large
+
+underground copper wires it passes
+
+through small regional networks before
+
+ending up here at tella house North in
+
+London tella house north is England's
+
+main internet hub the IP address on this
+
+packet tells the hub that the world
+
+science festival server is actually in
+
+Los Angeles so tella house north sends
+
+the packet out as light across the
+
+Atlantic over fiber optic cables very
+
+deep beneath the ocean the packet ends
+
+up here 60 Hudson Street New York City
+
+the largest internet hub on the EastCoast
+
+this hub sends the packet through a
+
+series of regional networks connecting
+
+New York to Los Angeles where the world
+
+science festival server resides the
+
+server reads the request and gets ready
+
+to send the webpage to England but web
+
+pages made up of images and text are too
+
+large to send us a single packet of data
+
+so how do we get it back to England
+
+imagine a group of 5,000 tourists
+
+visiting New York City in a single
+
+gigantic tour bus they are way up in
+
+Harlem but they want to visit the Statue
+
+of Liberty before it closes
+
+but it's rush hour on a Friday there's
+
+no way that giant bus is going to fit
+
+through those crazy congested streets so
+
+they decide to get off the bus and
+
+spread out some take the subway some
+
+take cabs a few rent bikes and some even
+
+take kayaks down the Hudson River how
+
+they get there doesn't matter as long as
+
+they get there on time
+
+likewise for the internet to work
+
+efficiently this webpage is pulverized
+
+into thousands of tiny packets of data
+
+each one wrapped with all of the
+
+information that needs to rebuild itself
+
+in English the packets are sent to LA is
+
+one Wilshire hub which checks the
+
+traffic report before sending them off
+
+through miles and miles of Lam they
+
+travel checking in through different
+
+hubs like our New York City tourists
+
+those packets don't care how they get
+
+there as long as they get there as fast
+
+as possible most of them will go through
+
+60 Hudson in New York where they are
+
+redirected back to England as light
+
+riding a fibre of glass as thick as a
+
+silver dollar then back on copper wire
+
+through regional British networks until
+
+all the package reached their
+
+destination and and this epic journey it
+
+all happens in about a second along with
+
+trillions upon trillions of similar
+
+journeys that happen each and every day
+
+on this remarkable easy to take for
+
+granted network of networks we call the
+
+Internet

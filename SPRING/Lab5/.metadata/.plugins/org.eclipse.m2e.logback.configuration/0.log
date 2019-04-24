@@ -1,0 +1,76 @@
+2019-01-30 13:48:00,784 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-01-30 13:48:47,434 [Worker-0: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-01-30 13:48:55,781 [Worker-0: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ATLabs:spring-ftp-file-integration:0.0.1-SNAPSHOT @ C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\pom.xml.
+2019-01-30 13:49:00,379 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-ftp-file-integration/src/main/java
+2019-01-30 13:49:00,380 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-ftp-file-integration/src/main/resources
+2019-01-30 13:49:00,390 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-ftp-file-integration/src/main/resources
+2019-01-30 13:49:00,402 [Worker-0: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-ftp-file-integration/src/test/java
+2019-01-30 13:49:01,290 [Worker-0: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 13 sec
+2019-01-30 13:49:02,638 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 13:49:02,668 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-30 13:49:02,695 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 13:49:02,700 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 13:49:02,700 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 13:49:05,916 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 13:49:05,918 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 13:49:05,918 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 13:49:05,920 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 13:49:05,921 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 13:59:53,736 [Worker-7: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ATLabs:spring-ftp-file-integration:0.0.1-SNAPSHOT @ C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\pom.xml.
+2019-01-30 13:59:55,206 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-ftp/5.1.2.RELEASE/spring-integration-ftp-5.1.2.RELEASE.pom
+2019-01-30 13:59:55,380 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-ftp/5.1.2.RELEASE/spring-integration-ftp-5.1.2.RELEASE.pom
+2019-01-30 13:59:55,620 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-net/commons-net/3.6/commons-net-3.6.pom
+2019-01-30 13:59:55,971 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-net/commons-net/3.6/commons-net-3.6.pom
+2019-01-30 13:59:56,171 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.1.4.RELEASE/spring-context-support-5.1.4.RELEASE.pom
+2019-01-30 13:59:56,338 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.1.4.RELEASE/spring-context-support-5.1.4.RELEASE.pom
+2019-01-30 13:59:56,626 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-ftp/5.1.2.RELEASE/spring-integration-ftp-5.1.2.RELEASE.jar
+2019-01-30 13:59:56,988 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-ftp/5.1.2.RELEASE/spring-integration-ftp-5.1.2.RELEASE.jar
+2019-01-30 13:59:57,241 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-net/commons-net/3.6/commons-net-3.6.jar
+2019-01-30 13:59:58,718 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-net/commons-net/3.6/commons-net-3.6.jar
+2019-01-30 13:59:58,917 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.1.4.RELEASE/spring-context-support-5.1.4.RELEASE.jar
+2019-01-30 13:59:59,549 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.1.4.RELEASE/spring-context-support-5.1.4.RELEASE.jar
+2019-01-30 14:00:01,048 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:00:01,054 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:00:01,055 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:00:01,060 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:00:01,060 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 14:00:03,110 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:00:03,135 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-30 14:00:03,166 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:00:03,178 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:00:03,179 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 14:00:04,790 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-ftp/5.1.2.RELEASE/spring-integration-ftp-5.1.2.RELEASE-sources.jar
+2019-01-30 14:00:09,678 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-ftp/5.1.2.RELEASE/spring-integration-ftp-5.1.2.RELEASE-sources.jar
+2019-01-30 14:00:09,877 [Worker-13: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.integration:spring-integration-ftp:5.1.2.RELEASE
+2019-01-30 14:00:10,050 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-net/commons-net/3.6/commons-net-3.6-sources.jar
+2019-01-30 14:00:21,408 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-net/commons-net/3.6/commons-net-3.6-sources.jar
+2019-01-30 14:00:21,509 [Worker-13: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for commons-net:commons-net:3.6
+2019-01-30 14:00:21,813 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.1.4.RELEASE/spring-context-support-5.1.4.RELEASE-sources.jar
+2019-01-30 14:00:23,378 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.1.4.RELEASE/spring-context-support-5.1.4.RELEASE-sources.jar
+2019-01-30 14:00:23,499 [Worker-13: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-context-support:5.1.4.RELEASE
+2019-01-30 14:00:23,833 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:00:23,833 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:00:23,833 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:00:23,836 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:00:23,837 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 14:01:24,263 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:01:24,264 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:01:24,264 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:01:24,270 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:01:24,271 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 14:05:38,947 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:05:38,959 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-30 14:05:38,960 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:05:38,965 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:05:38,966 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 14:09:49,432 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:09:49,434 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-30 14:09:49,435 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:09:49,440 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:09:49,441 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 14:13:08,363 [Worker-14: Launching spring-ftp-file-integration - FtpApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:13:08,366 [Worker-14: Launching spring-ftp-file-integration - FtpApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-30 14:13:08,368 [Worker-14: Launching spring-ftp-file-integration - FtpApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-30 14:13:08,371 [Worker-14: Launching spring-ftp-file-integration - FtpApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-30 14:13:08,371 [Worker-14: Launching spring-ftp-file-integration - FtpApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ticklu\Downloads\Spring\spring-ftp-file-integration\src\test\resources
+2019-01-30 17:51:37,031 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

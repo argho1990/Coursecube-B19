@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="index.js"></script>
+  <script type="text/javascript">
+    var h1 = document.querySelector("h1"); h1.addEventListener("input", function () {
+      this.setAttribute("data-text", this.innerText);
+    }); 
+  </script>
+  <link rel="stylesheet" href="css/main.css">
+
+  <canvas id="space_box" style="background:#000;"></canvas>
+
+  <script type="text/javascript">
+    var canvas = document.getElementById('space_box');
+    var c = canvas.getContext('2d');
+
+    var innerWidth = window.innerWidth - 20,
+      innerHeight = window.innerHeight - 20,
+      radius = 1,
+      starsIndex = 0,
+      stars = [],
+      TWO_PI = Math.PI * 2,
+      centerX = innerWidth / 2,
+      centerY = innerHeight / 2,
+      focalLength = 100,
+      starRadius = null,
+      starX = null,
+      starY = null,
+      numStars = 2000,
+      mouse = {},
+      starX_dir = 0,
+      starY_dir = 0;
+
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+
+
+    // Move the stars with mouse pointer
+
+    window.addEventListener('mousemove', function (e) {
+      mouse.x = e.x;
+      mouse.y = e.y;
+
+      if (mouse.x < centerX) {
+        starX_dir += 5;
+      } else {
+        starX_dir += -5;
+      }
+
+      if (mouse.y < centerY) {
+        starY_dir += 5;
+      } else {
+        starY_dir += -5;
+      }
+
+    });
+
+    // Zoom in/out into the Space on mouse scroll
+    canvas.addEventListener('mousewheel', function (e) {
+      if (e.deltaY < 0) {
+        focalLength *= 1.1;
+      } else {
+        focalLength /= 1.1;
+      }
+
+      if (focalLength >= innerWidth) {
+        focalLength = innerWidth - 20;
+      } else if (focalLength < 100) {
+        focalLength = 100;
+      }
+
+    }, false);
+
+
+    // Function for create new start
+    function star(x, y, z) {
+      this.x = x;
+      this.y = y;
+      this.z = z;
+      this.radius = radius;
+      this.color = "#fff";
+      starsIndex++;
+      stars[starsIndex] = this;
+      this.id = starsIndex;
+
+      // Animate Stars
+      this.update = function () {
+        starX = (this.x - centerX) * (focalLength / this.z);
+        starX += centerX;
+
+        starY = (this.y - centerY) * (focalLength / this.z);
+        starY += centerY;
+
+        starRadius = radius * (focalLength / this.z);
+
+        starX += starX_dir;
+        starY += starY_dir;
+
+        this.z += -10;
+
+        if (this.z <= 0) {
+          this.z = parseInt(innerWidth);
+        }
+
+        this.draw();
+
+      }
+
+      // Function for draw star
+      this.draw = function () {
+        c.beginPath();
+        c.arc(starX, starY, starRadius, TWO_PI, false);
+        c.fillStyle = this.color;
+        c.fill();
+        c.closePath();
+      }
+
+    }
+
+    // X,Y,Z values
+    var s;
+    for (s = 0; s < numStars; s++) {
+      x = Math.random() * innerWidth;
+      y = Math.random() * innerHeight;
+      z = Math.random() * innerWidth;
+      new star(x, y, z);
+    }
+
+    // Function for animate canvas objects
+    function animate() {
+      requestAnimationFrame(animate);
+      c.fillStyle = "#000";
+      c.fillRect(0, 0, innerWidth, innerHeight);
+
+      for (var i in stars) {
+        stars[i].update();
+      }
+    }
+
+    animate();
+  </script>
+
+
+</head>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  canvas {
+    position: absolute;
+    top: 49%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+
+  }
+
+  ul {
+
+    position: absolute;
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 0;
+    border-top: 2px solid #777;
+    display: flex;
+  }
+
+  ul li {
+    list-style: none;
+    position: relative;
+    top: -20px;
+    width: 24px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    margin: 25px;
+
+  }
+
+  ul li:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 7px;
+    width: 10px;
+    height: 8px;
+    background: rgba(14, 4, 4, 0.986);
+  }
+
+  ul li:after {
+
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 12px;
+    width: 74px;
+    height: 26px;
+    border-bottom: 2px solid #444;
+    border-radius: 50%;
+  }
+
+  ul li:last-child:after {
+    border-bottom: none;
+  }
+
+  ul li:nth-child(3n+1) {
+    background: rgba(255, 0, 0, 0.2);
+    animation: animate1 1.0s linear infinite;
+  }
+
+  @keyframes animate1 {
+
+    0% {
+      background: rgba(255, 0, 0, 0.2);
+    }
+
+    50% {
+      background: rgba(255, 0, 0, 1);
+      box-shadow: 0 0 25px rgba rgba(255, 0, 0, 1), 0 0 45px rgba rgba(255, 0, 0, 1);
+    }
+
+    100% {
+      background: rgba(255, 0, 0, 0.2);
+    }
+
+
+  }
+</style>
+
+<body onload='run()' style='background: black'>
+  <canvas id='scene' width='500px' height='500px' style='background:black'></canvas>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <h1 contenteditable data-text="X-mas">X-mas</h1>
+
+  <div class="face"></div>
+  <div class="hat">
+  </div>
+  <div class="skin">
+    <div class="mustacheandbrow"></div>
+    <div class="eyesandnose"></div>
+    <div class="mouth"></div>
+
+  </div>
+
+
+</body>
+
+
+</html>

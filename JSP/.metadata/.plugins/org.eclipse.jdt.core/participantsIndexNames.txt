@@ -1,0 +1,21 @@
+INDEX VERSION 1.131
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4218546187.index
+\Lab9\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3327062210.index
+\Lab10\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1709107685.index
+\Lab4\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4269516170.index
+\Lab5\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\289800298.index
+\Lab3\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\306199317.index
+\Lab7\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3850621597.index
+\Lab3\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2313516922.index
+\Lab6\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1624548452.index
+\Lab8\src
+C:\Users\ticklu\Desktop\B19\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1575730349.index
+\Lab11\src

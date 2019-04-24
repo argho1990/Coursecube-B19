@@ -1,0 +1,68 @@
+[--------------------------------------------------------------------------------]
+[--------------------------------------------------------------------------------]
+[--------------------------------------------------------------------------------]
+                                       
+                                        [Private members]
+
+         => cannot be accessed from [Non Subclasses] outside different [Package].
+         => cannot be accessed from [Outside Package].
+         => Non SubClass Members with private modifier cannot be accessed.
+         => SubClass Members from same package cannot be accessed since its a [private modifier].
+         => Variables declared as private can be accessed from same class.
+
+<----------------------------------------------------------------------------->
+
+                                       [Default Members]
+
+        => can't be accessed from [Non Subclasses] outside [Different-Package].
+        => can't be accessed from [Sub-Classes] from [Different-Package].
+        => Non [SubClass] Members with [default modifier] can be accessed from [same package].
+        => [Defualt Members] can be accessed from [Sub-Classes] in [same package].
+        => [Variables] declared as default can be accessed from [same class].
+
+<----------------------------------------------------------------------------->
+ 
+                                      [Protected Members]
+
+        => cannot be accessed from [Non Subclasses] outside different [Package].
+        => which are subclass can be accessed from [Different Package].
+        => Non SubClass Members with [protected modifier] can be accessed same package.
+        => Protected Members can be accessed from subclass in [same package].
+        => Variables declared as protected can be accessed from [same class].
+
+
+ <---------------------------------------------------------------------------->
+
+                                        [Public Members]
+
+        => can be accessed from [Non Subclasses] outside different [Package]. 
+        => can be accessed from [Different Package]. 
+        => Non SubClass Members with [public modifier] can be accessed same package.
+        => [Public Members] can be accessed from subclass in [same package].
+        => [Variables] declared as public can be accessed from same class.
+
+ [-----------------------------------------------------------------------------]
+ [-----------------------------------------------------------------------------]
+ [-----------------------------------------------------------------------------]
+
+
+
+    <---------------------------Short Note------------------------------->
+
+1.  Private:  A. Accessed:      [Same Class]  
+              B. Not Accessed: [All other conditions]
+
+2. Default: A. Accessed:      Same package [Subclass,Non Subclass],Inside Class.
+             B. Not Accessed: Different Package[SubClass,Non Subclass].  
+
+3. Protected:  A. Accessed: Inside Class,Same package[SubClass,Non SubClass].
+                               SubClass[Different Package].
+                B.  Not Accessed: Non SubClass[Different Package]. 
+                           ***=> [SubClass] using [SuperClassObject] cannot be accessed.
+                           ***=> [SubClass] using other [SubClassObject] cannot be accessed.
+                                      
+
+4. Public:      A.  Accessed      : [Same Class][Same Package][Different Package]   
+                B.   Not Accessed :   
+
+  <--------------------------------------------------------------------->

@@ -1,0 +1,31 @@
+package com.opps.THIS;
+
+/*
+ * this is a keyword which acts as a reference variable.
+ * this reference variable contains address of current object.
+ * this is an instance variable reference variable and cannot
+ * be accessed from static context.
+ * this keyword can be used in three ways:
+ * 
+ * 
+ * 
+ * 
+ */
+ 
+
+
+
+
+class 
+
+
+
+
+public class Lab266A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

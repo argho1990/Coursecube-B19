@@ -1,0 +1,33 @@
+package com.jlcindia.spring;
+
+public class Lab1 {
+
+
+		
+	    // Without IOC
+		 public static void main(String[] args) {
+	     A aobj = new A();
+	     aobj.setA(99);
+	     aobj.setMsg("HelloGuys");
+	     B bobj = new B(88,"Hai Guys");
+	     Hello hello = new Hello(bobj);
+	     hello.setAobj(aobj);
+	     hello.show();
+	   }
+	         
+	}  
+
+	
+		
+		
+		
+	    
+	    
+		
+	    
+	     
+	 
+	   
+		
+
+

@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\ticklu\Desktop\B19\SPRING\Lab3\.metadata\.plugins\org.eclipse.jdt.core
+4291019317.index

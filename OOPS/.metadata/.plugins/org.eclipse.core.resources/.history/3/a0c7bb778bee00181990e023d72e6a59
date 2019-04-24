@@ -1,0 +1,41 @@
+package com.opps.THIS;
+
+/*
+ * this is a keyword which acts as a reference variable.
+ * this reference variable contains address of current object.
+ *  
+ * this keyword can be used in three ways:
+ * To access the instance variables:
+ * this.a
+ * To access the methods:
+ * this.m1();
+ * To access the overloaded constructor
+ * this(parameters);
+ * 
+ */
+class Hello3{
+	
+	int a=9;
+	static int b=10;
+	void show(){
+	String a = "JLC";
+	String b = "SD";
+	System.out.println(a);
+	System.out.println(b);
+	System.out.println(this.a);
+	System.out.println(this.b);
+	System.out.println(Hello3.b);
+	}
+	
+}
+	
+public class Lab268{
+
+	public static void main(String[] args){
+        
+	Hello3 h = new Hello3();
+	h.show();
+		
+	}
+
+}

@@ -1,0 +1,91 @@
+Page 1:
+In class,class lab225[sic],Encapsulation is writing a class.
+I am writing a simple class called customer,so I am taking one object called Customer
+Encapsulating that now,Encapsulation is writing a class called Customer 
+And inside a customer what you can do.
+Describe something,its state and behaviour
+Means you have to declare the variables for recording the state and data and write the methods for implemeting its behaviour.
+So what  data you want to store for the customer I want to store
+<1>
+
+These four things I want to store about the customer.
+This is the state.
+Then one operation currently just I am showing the customer data
+just printing in the customer data.I am printing in one line format<2>
+concatenation also you know:
+-------->(cid + "\t" + cname + "\t" + email + "\t" + phone )
+
+I should have a simple class like this save this with the name.(lab225.java)
+To test the customer class you have to take the object of customer class.
+customer cust = new customer();
+With that u can call 
+show method cust.show();
+
+calling show method of customer.
+Customer class having 4 variables and one method and 1 method.
+Crearting customer method,calling show what it will display now.
+What is the cid value when memory allocated for cid.what is the value of cid.
+cid is integer right what is the value inside cid.=>0
+cname=>null]
+email=>null
+phone=>0
+That only will be displayed right,compile and run now.
+
+So what is the use of creating customer object (with the default values)?
+No use right if you create a customer object if you will create a customer class object it is allocating memory for
+cid
+cname
+email & phone.
+
+1 Customer data has to be stored in this.
+and if I have hundred customers then how many objects required?
+Can I store 100 customer data  in 1 customer object.
+
+Page 2:
+
+This is called as state of an object.<1>
+This is only one function [pause]behaviour.<2>
+
+You should know that what variables to write what methods to write.
+How much data to store so when you describe your entity.
+
+Now when you creating object say
+
+classname variable = new classname.
+This is the way to create right.
+changes internally if u write this [see RN] 
+1 you say 
+new Hello is 2
+Something like this we discussed somewhere arrays case.
+
+Similar idea.
+What happens Hello h?
+what is h now?
+reference variable of hello class.
+reference variable of any class it will take only 8 bytes of memory,default value as null,name is h.
+1 is done
+2nd new Hello();
+what is the use of new operator?
+new operator is used to create object?
+also we have written another line 
+under new operator-- allocating memory for instance variables of the class.
+class I have two types of variables.
+Instance or Static:
+Whether this two(int a , int b) are instance or static.
+So intance variables.
+So new operator will allocate.
+Whenever you say new and class name 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 

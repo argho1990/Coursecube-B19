@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lab352E",
+            "request": "launch",
+            "mainClass": "Package.lab352E",
+            "projectName": "OPPS_48c85b1a"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - lab_ex1",
+            "request": "launch",
+            "mainClass": "lab_ex1",
+            "projectName": "OPPS_5a339363"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Lab",
+            "request": "launch",
+            "mainClass": "Lab"
+        }
+    ]
+}

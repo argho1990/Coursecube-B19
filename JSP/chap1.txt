@@ -1,0 +1,1123 @@
+Types of Applications:
+When you are developing any application using java or any other programming language,your application can be standalone or client server or 
+web based application or distributed or combination of web and distributed with the help of java.
+
+Developing first Servlet:
+In every program,there is a main method,what is the use of main method?
+Starting point of your application development.
+When you start running your application,initially  main will be started.
+From there you can implement any function,now onwards we are not using main method
+We are writing an application,that will not contain any main method.
+How it runs we will see??
+Taking login Scenerio:
+Ex:Login (Gmail or Facebook)
+Writing login.html
+You know how to write basic html file
+Basics currently you know.
+
+Heading I am taking "course cube" as header and down to that heading "user login",ie 
+username is a label just beside to that, label u need to display 1 text field,so that you can enter the value.
+and the another label called password and another text field and 
+You should have some button callled submit button,Caption of that you can write anything login or whatever caption you want.
+
+So whatever caption you observed over the button,"in facebook what is the caption of the button?-login".
+In gmail,sign up,so that you can customize whatever you want you can display it on the button.
+This is the login form.
+So,initially you are opening in , deployed in coursecube website.
+So,there is the url to write:
+
+****Make its a login.html file**** 
+
+
+Output is this:
+You have to request for this page initially.
+http://www.coursecube.com/login.html
+
+So,when you want to access any application,what is your first step,first you are opening a browser and then you have to type the url
+This is called as url.(https://www.coursecube.com/login.html)
+
+To open the browser and type the url
+When you type and press enter,then request will go to server where is the coursecube server,somewhere it is there it is not in your computer right,it is 
+there in remote machine,somewhere in remote server.
+
+So,this is server assume I have a couple of applications of applications and deployed in a webserver called "apache tomcat",this is called as webserver, apache tomcat is a webserver,
+
+Whatever application you are developing,that application has to be deployed in this server machine.
+So when we send request to this,then type this url and press enter request will go this webserver
+Inside this application your application is (say,ccwebapp),this is your application name,(ccwebapp) is application you have developed,
+which is deployed in the webserver.So request will go to this server and what you are requesting here?
+You are requesting for login.html file.It is called as resource,any file you are writing,any component you are wriiting
+and deploying in the server.I am using a term here called deploy,developed you know right.
+
+What is developed?Writing the code html or jsp or java class whatever youp are writing the code,you are developing the code
+Then you have to deploy into the server,so what is the meaning of deployment,moving the application to server location.
+
+Where you are developing the Application?
+You are developing in Eclipse only.Eclipse will have some workspace.At some location you are writing the code,developing the code.
+Once application development completed you have to move that application to server location.
+The process of moving the application to server location is called as "deployment".
+So,in this applicaton, whatever files you have deployed,all are called as "resources".
+So,you are requesting for the resource called login.html,so it verifies in this application,login.html is there or not.
+If login.html is available that "response" will be displayed back to you.You see the output something like this.
+If your html file is not there,then you will get an error message,saying HTTP status code:404,"requested resource is not available".
+Your are requesting for a resource called login.html,if it is there it will be displayed as an output.
+
+If it is not available with the status 404,its displays the error message as requested resource/login.html is not available.
+
+Assume I have written this,and it has displayed output to you.
+Then usually I have entered the user name password.
+If I maintain user name password something like this.
+And click on the submit button.
+
+
+When I click on submit button,again request will go to server.
+
+
+"So we need some person here.
+Someone has to sit in the server and
+What is the job of this person?
+Whenever you send a request by submitting username and password this person is responsible to collect this
+username password whatever you are entering here in the text field in an html file,that you have to collect at server side,
+so some person has to do that."
+And then verify whether username password is right or wrong
+
+Where username passwords available?
+In database.
+How to contact database now?
+You know how to contact database,that we will do it later.
+So,you have to contact database.
+
+When you contact database,you will come to know username,password available or not.
+
+If right,display the homepage if wrong come back and say that "username/passoword something,your username password is invalid".
+Some message you can display back to user.
+This person who is sittting in server responsibile for receiving request processing is called as servlet.
+
+Say,I am writing "one servlet" called login servlet.
+
+Its just a naming convention[sic] a servlet component LoginServlet.
+
+Its job is to verify the login credentials.
+
+Similarly we have a registration form.
+
+When I submit registration with all the details,you need to have another servlet,which is responsible to collect all the registration data and store 
+that in database.
+
+For that you can write another servlet called "Register Servlet".
+
+For "each task,each request",you must have one servlet component,I m calling here term as "component".
+Servlet component you can say,it is also called as "servlet resource",or "servlet component" which is responsible to recieve request and process it delivers the respose.
+
+Servlet will do 3 things:(**request will come to this)
+Then first whatsover data is there
+1 Collect the data:
+  whatever data you are sending here.currenlty you are sending only two values username/password,your login servlet has to collect this 
+  How to collect?
+After colllecting process
+2.Process data
+3.Sending response:
+Send response to client who is sending the request,you are entering username password,you are submitting.
+So here we have to collect only username and password.
+
+Some string un = there is an object here we will take about this 
+
+There is a method called getParameter,
+
+getParameter of some name you have to write
+
+Code -----> String un = getParameter("uname")
+There are two text field here.
+
+In one text field I am writing "sri" value,another text field I am writing I am writing value called "vas".
+
+Now I have to collect the value from the text fields.
+
+When I collect value from text fields,you should have some unique name for this.
+
+This text field have some name and this text field should have 1 name.
+
+And this text field should have one name
+So,you can collect the value of text field whose name is something.
+
+For eg this text filed name I am considering as uname,it just logical name String.
+
+And this name is considering as pword.
+
+So,two text fileds are there you have given a unique name for this.
+
+If you want you can use same name also.
+But the way of collecting data will change.
+
+We will talk later.
+We have some unique names here,now here you have to currently [sic] data,
+getParameter give me the value of the parameter whose name is uname.
+Just simple method getParameter of uname.
+
+When you submit this form,whatever data you have submitted,this data will go from client machine to server machine.
+That will go as parameters.
+It will go as parameter,which has parameter name means "text field name".What is the name of this?
+uname.
+What is the value entered by you?
+sri
+And second parameter name is  pword
+What is the value entered by you?
+vas
+This is one parameter(uname),this is another parameter(pword)
+
+You are sending 2 parameters from client to server.
+Each parameter has name and value.
+
+If you know the parameter name,you can get the value by calling getParameter method.
+So you are asking get the parameter value whose name is uname.
+
+What this contains now?
+This is a String variable.
+
+String un = req.getParameter("uname");
+What it contains now value "sri"
+
+Similarly String pw = req.getParameter("uword");
+
+Parameter name you specify value will  come to u.
+
+Simple method at server side to access and you are not at all writing any code for internal communication.
+Here you have a client machine,this is your computer,your PC,Laptop and this is server machine which is at remote place.
+When you submit from your machine your machine and server machine are connected.There should be network connection.
+And data has to be transferred from clinet machine to server machine on the internal code already they have written.
+
+You just design your html file and when you submit the data,automatically it will go to ,from here client, we have a browser.
+What is the application you have on the client side?
+You are using a browser.U cna use nay browser functionlity is mostloy 99% same.
+You have changed your front person to the browsers.
+
+Some functionality is changed from browser to browser.
+
+This browser is an application right,it is an application or not?
+Browser is an application some software it is,you are installing.
+
+Server also some application,developed and installed at some place.
+This two(browser,server) will talk internally,whenever you submit.These two will talk.makes the connection and transfers the data at low level.
+That low level job is not required for us.
+
+Already implemented with server,implemented with browser.
+U just data u collect,u just call this method,you will get the data submitted by the client.
+
+So,you collected 
+1 one done.
+2nd Process:
+Processing will change.
+
+We are collecting data,way of collecting data always same.
+Whether you are collecting two fields or 20 fields depending upon the form you design.
+
+Here becaue of login we are sending username/pwd 2 fileds.
+If its a search field,suppose I want to search the customer based on email ID,then how mabny input field will be there.
+Only one.
+
+We have only enterered email,context field and submit button.
+
+You are submitting only email ID.
+
+get the email ID
+get the data of the email ID and 
+display back to [...]
+
+So processing logic will change depending on the requirement you are developing,
+
+Here it is login,you have to contact the database right,
+
+Contact DB.
+For that you know how to write JDBC programs.
+Currently I am not doing this.
+
+I just consider as 
+
+if (un.equals(pwd)) //currently I am considering
+login success
+
+So assume because of first example,make a small requirement.
+We dont have any database in this example.
+
+If both are same,we will consider login as success,if both are different login failed.
+So,the processing case,you are deciding whether the login is success or not.
+
+Then third we are sending the response back to client.
+
+so what to do.
+
+if (success)
+then display HOMEPAGE
+What is HOMEPAGE?
+If you take your gmail,initiallyt only have login form,so once login success,you seeing all your (inbox,All sent items,ie followed as homepage.
+Or in facebook when you login,you can see some kind of homepage,wiothout that you cannot naviagate over the things.
+
+Else
+login failed.
+
+Again,display login page and somewhere here you display username and pword.
+Some error message,usually all error message will come in red color.
+Else display login page only but error message.
+
+So now for this basic login requirement,how many files we are writing.
+First is login.html file.
+and then LoginServlet.
+
+LoginServlet is a java class,You have to write a java class by following some rules.
+Then you deploy both HTML file and servlet in the server only.
+
+Where this 2 will sit?
+Inside the server only.
+
+Your html file is also inside server only,not in your machine.
+
+When you open the browser,first you request for this,so you are sending REQ1 your first request is what is REQ1 you are sending,
+please display the login.html file and you will get a response.
+
+Your first response is RESP1 is login form will be displayed.Then you are entering username password you are submitting.
+This is your 2nd request,what is your 2nd RESPONSE?
+Your 2nd RESPONSE? What is the response you are getting HOMEPAGE OR LOGIN PAGE.
+
+depending on whether you are request processing is successfull or failed?
+So while writing my java class called LoginServlet.
+
+So,as of now we are writing so many java classes and after writing the class,class will also have methods.then what we have done previously.
+After writing class we are creating object right?
+Then we are calling the method.
+
+We have written Hello Class some many times,then we created object,using new Hello,then we call the methods,have a show method calling this.
+
+So after writing class,you have to create object,and whatever methods you are writing inside this servlet you have to calll it actually.
+
+But now u just write a servlet class and throw that inside the server.You no need to create any object,you no need to call any method,
+your server will take care about creating object and calling the methods implemented by you inside that,so you tend to tell your server 
+that I have written one servlet  please take care about that,so you have to integrate to the server,than the server, inside a server,
+inside a webserver apache tomcat web server,written one servlet,please take care about that,so you have to integrate to the server.
+
+Than the server,inside the server,inside the webserver apache tomcat ,there is another component sitting called container,the actual processing will go right,
+this top box is called as webserver,and there is one seperate application and this is webcontainer,webcontainer contains your applicaton,it contains ccwebapp.
+where you deployed your application,you are deploying your appplication inside your web container,webcontainer is one application or one software application which 
+is responisble to manage your web based application,and webcontainer application is running inside webserver.
+
+When you send the request,first request will come to webserver,webserver will hand over to webcontainer.webcontainer will process all this and webcontainer will
+deliver the response to webvserver.Webserver will send the response back to client.Now webserver which is sitting on the top of webcontainer.
+
+Webserver goal is different,webcontainer job is different,webserver goal is to connect to client taking the data ,and hand off data to webcontainer and if webcontainer is giving any
+response data,takes the data and send to client,only network management will be done by the webserver.
+
+But your application processing for eg when you ar requesting for login1.html file what happens 
+I am typing coursecube.com/login1.html.
+you are requestig for a resource called login.html.
+request will go to server,server simply hand overs to container,
+now container is responsible to check whether this html file is available or not.
+This html fiel is not availble, so it sends the error message back.
+
+So,container will process your application,this webcontainer is now responsible to load your servlet class,
+and webcontainer is responsible to create the object of the servlet class,webcontainer is responsible to call the methods,implemented inside the servlet class.
+you just write a servlet class throw that inside the webcontainer,webcontainer will manage the complete life cycle of the servlet.
+
+Servlet has some kind of life cycle mechanism
+
+
+That all will be managed by the servlet,but you have to inform to the webcontainer that I have written some servlet, its class is this,its available in some package.
+This information you have to intimate to webcontainer.
+Because you may write different different classes.
+I am writing class name as LoginServlet,you may write as LoginServlet.Some other can write as some other and you may write different different servlets,
+You may write 1000 servlets in an application,container cannot recognize all,you have to telll that I have written these many servlets,names are these.
+
+That information you have to communicate with webcontainer.
+
+How u can communicate wuth webcontainer?
+You have to tell to ui team.
+
+You are a devloper you are writing a servlet called LoginServlet.
+Now you have to intimate about your servlet to the container.
+
+How you can intimate?
+What options?
+
+What is the use of Annotation?
+There are two options:
+You cannot send email or u cannot send sms right?
+
+You have to configure this.
+You can pass information in 2 ways,
+
+1.You write all your information in the xml file.
+                            or 
+2.You configure through annotation.
+
+
+This is the old(1) mechanism and this is the new(2).
+
+So whatever serlets you are writing,you describe all the servlet information inside an xml file.
+
+and xml file here in the web application fixed as web.xml file is  in your application.
+In your application what are the components we were writing as of now is 
+1 is Login.html
+2 is LoginServlet.class
+You are writing .java but you are keeping as .class file
+
+And 3rd file you have to keep is web.xml
+
+What does web.xml file contains?
+About your servlet.
+
+I f you write 1000 servlets,all 1000 servlets has to be described inside web.xml file.
+That you can call it as a configuration.
+Configure the servlet.
+
+How can I configure servlet?
+Where you can describe the information of your servlet?
+
+In web.xml file or in annotation.
+
+
+The process of desrcribing your servlet at some place is called as configuration.
+
+Where you can describe that?
+You can describe that in xml or in annotation approach.
+
+Configuration of servlet can be done with xml or with annotation.
+
+3 components we write.
+After writing all 3 components 
+Get Back and deploy to webcontainer.
+
+When your summarise running automatically webcontainer will run.
+Request for html file
+and it will find html file available or not.
+Yes available.
+Then response will be displayed.
+You are seeing this form now,as a First response.
+
+Then enter username and submit,you are sending request,
+This request will go to server first webserver,webserver will hand over to webcontainer,now webcontainer has to ask someone to process this,
+webcontainer has received a request,now webcontainer has to ask someone to process the request.
+So,who will process this.
+LoginServlet
+
+Assume I have 3 servlets
+1 is LoginServlet
+another HelloServlet
+another HiServlet
+
+And you consider instead of Login name 
+I have written 2 servlets here.
+One is HelloServlet
+Another is HiServlet 
+Now which servlet is responsible to do my Login Request?
+Assume no login servlet this I written as HelloServlet
+
+Name can be anything right and HelloServlet is responisble to process your login requirement.
+To input username and pwd this Servlet is responsible but in addition to this I have written another servlet called HiServlets also.
+I have 2 servlets also,HelloServlet,HiServlet and both are configured in web.xml file.
+So no of files available in application are ccwebapp is the application name which has 4 components.
+
+xml file what is there inside xml file?
+Configuration of HelloServlet,configuration means information about your servlet you are describing in xml file.so configuration of HelloServlet,HiServlet available in
+web.xml file.
+
+"Hello" and "hi" doing something and html file,in this we know that the logic written inside Hello Servlet is for login procedure.
+And say inside HiServlet we have a logic for registration requirement but when you submit a request to server,server hand overs to 
+container,container has to ask one servlet to process this,there are 2 servlets,there are 2 persons
+How container will come to know that which server will be able to process your Login Requirement.
+For that whenever you send a request,your request will go with some URI.
+For  every servlet you bind the servlet with some uri,this I am writing say as (/login.jlc).
+
+And this I am writing as (/rec.jlc)
+I have taken a uri this is called as URI.
+
+So when I am sending this,I have to send request URI as /login.jlc,I am sending request with the URI called login.jlc.
+Which servlet is binded with /login.jlc HelloServlet,so container checks what is the request coming /login.jlc
+And .jlc notation why it is required we will see that later.
+This is considered as login.jlc
+
+Now there are so many servlets,each servlet will have a URI,request is coming with login.jlc
+Means you are submitting login form with username and password.
+Container takes this login.jlc checks which servlet is configured with URI called login.jlc HelloServlet
+
+Then it will process the HelloServlet,if this is a registration form same like this u have written a registration form.
+Same like this you have written a registration.html file.In that u have all the registration data.
+When you submitting a registration form,you have to send request with /rec.jlc.
+When request coming with rec,jlc container checks which servlet is specified with /rec.jlc?
+HiServlet.
+Invokes the functionality of HiServlet.More on that we will see in the life cycle mechanism.
+
+So if u have to develop basic application what is required?
+If u want to develop run this,to see the output something like this,what is required
+First you need is a browser,which is already installled,which is readily available,you need tomcat so we have to install tomcat first,after installation of Tomcat,
+you have to develop the code,what are the components you developed now.
+Come back to this login:
+LoginServlet whose url pattern is : login.jlc
+3 files
+where you are developing this?
+Eclipse
+In Eclipse you have to create a project.
+Previously we created a java project.
+Now you have to create a web project.
+In that Eclipse web project,You develop the code for html,servlet class and web.xml file.
+After writing that deploy that into your Tomcat  and stop the Tomcat.
+When server is running,then it will open the browser,and send the request 1,you will get a response from server.
+Server is running,then you submit username password,your servlet will recieve and so some processing and response back to the client(here, browser).
+
+We will do this as of now.
+We have explained the flow at very high level.
+
+
+Simillar diagram given at page no 8.
+Consider request to login servlet.
+LoginServlet is being creating,collecting data,verifying the client data.
+There is processing 3rd is getting response back to client.
+And response we will throw as loginpage.html.
+Currently we are not coming to login.html file
+Because html is static page.
+We cannot make it dynamic and some dyamic response I am sending.
+code:
+
+2.Verifying the client data
+if (unm.equals(pwd)){
+msg="<h1>Login Success<br/>Welcome to JLC Homepage";
+}
+else
+msg="<h1>Login Failed<br/>Invalid Username or Password";
+}
+
+3.Prepare the response:
+Writer out = res.getWriter();
+out.write(msg);
+
+
+Your are sending different output to the client.
+
+So come back to the installation first:
+
+Write the terms that I have written there.
+
+1.Develop
+
+2.Deploy
+
+3.Resources :Any html file,any servlet you write which you write which are called resources.
+
+4.Components:servlets and jsp are called as components.
+
+5.Life Cycle.
+
+And configuring of  servlets can be done in 
+1.xml
+2.Annotation
+
+Every servlet you wriite will be managed by the container only means you are not going to create any object now onwards.
+Servlet objects will be created by the container,methods written inside the servlet also willl be called automatically by the container only.
+
+You are not going to create objects,you are not going to call any methods,related to servlet.
+Those terms again we will more later,
+
+Come back to installation at page no 7
+
+Two ways we can configure.
+
+WebContainer:
+
+Webserver:
+
+
+Your output will be login success.
+Welcome to home page.
+
+Tomcat 7 Installation:
+1.Make sure you have Java 7 or higher version installed.
+2.Apache Products are always open licensed.
+3.Not ony usage free,if u want u can modify
+4.If u want to customise Tomcat Functionality.
+5.U can change the software and redistribute.
+6.But Java you cannot do like that
+7. Install Full (All of the Components) 
+
+What is the significance of the Port Number?
+
+It is like your Roll No,in this room so many students are sitting,how to identify the students uniquely,the entire room no is 1 right.In room 1
+there are so many students sitting,there are multiple rooms,to identify rooms we say room no 1,room no 2,room no 3.In that room that are 
+so many students,to identify each student we have roll no of students
+  
+When you have a computer,to identify the computer uniquely across the globe,we have IP Address,with IP Address we can reach the computer,
+inside the computer we have so many softwares installed,so many servers running,inside 1 computer,assume there is oracle software running,mysql running,
+Tomcat Running,JBOSS Running,WebLogic Running.
+So when I am sending a request,which server has to process the request that process will be identified uniquely in the computer using  this port Number.
+
+When u start oracle and mysql and Tomcat,three servers running,3 servers will run with the unique numbers,this port number is the number which is used to identify 
+your server or service uniquely with the computer.
+
+When I request this service  port number(1521),then it is for oracle,it will be given to oracle server.
+if request is coming with the port number 3036,then its is request is to be processed by the mysql server.
+
+Similarly if you want to send the request now to Tomcat Server.
+then you send the request with different uniuque number called as Port Number.
+
+So here:
+Server Shutodown Port:
+Http Connecter Port: $-->9999
+Two different connector:
+HTTP connector is differnet and 
+AJP Connector($-->9009) 
+is different.
+
+If your not changing Oracle will also have conflict.
+Even Oracle has aslo one similar port no internally using.
+Oracle has 2 different servers internally.
+Whatever Oracle 10g installed.Oracle 10g database server is different,database server running in the port 1521
+And Oracle 10g internally having 1 Tomcat,they have taken same Tomcat,integrated with Oracle 10g that is also running
+with 8080 and same 8009,8005.
+When Oracle is running in your machine that will not allow you to run Tomcat.
+Change all the ports so that even if Oracle10g running,it wont stop your Tomcat.
+After this 3 changes,
+Gives user name and password.
+
+Changes made(Server Shutdown Port,Http Connector Port,AJP Connector,username/passowrd provided)
+
+Click on Next
+It is selecting the JVM
+Automaticaly,it has selected the JVM now.
+
+Its asking I want a JDK ,I want a JRE
+Why JRE is required?
+To run the Java Programs,to run the JAVA Application.
+So how Tomcat is implemented?
+Tomcat is an application which is developed in JAVA only.
+Tomcat is a Java Application.
+When you install Tomcat,Tomcat has to run,that application has to run.
+Internally Tomcat is a Java Application,which has main method.
+That applicatiion will run your servlet,so you no need to select actually.
+By defualt it picks the highest,if you have JRE 6,JRE 7,JRE 8,all three softwares installed in your machine.
+Automatically it picks the highest version.
+1.8 JRE selected.
+If your installer is unable to select this,then select this using path.
+Otherwise JRE selected now.
+JRE 1.8 selected.
+
+Which JRE selected private or public?
+This is public,so private will not be used.
+
+Now in your computer,you might run so many applications which are developed in JAVA.
+But those JAVA applications will need JRE.
+
+So all the JAVA Applications running on your computer will use only the public JRE.
+That is in C Program files.
+So that is already there,click on next button.
+And Installlation location,where you want to install?
+You want to use this customise it.
+I am going to install on E:/Tomcat7.0
+That is the destination folder you want to install.
+And then click on Install button.
+
+Uncheck Run Apache Tomcat.
+
+Click on Finish.
+
+Your Tomcat is installed now.
+
+Installtion we check in : Here(C:\Program Files\Apache Software Foundation\Tomcat 7.0)
+Under Tomcat we have Tomcat7.0 folder:
+Go to command line:
+Under Tomcat 7.0 we have 
+bin,lib
+
+When we install any JAVA related software,whether Tomcat,JBOSS,any other
+Everywhere you will find a lib folder and bin bolder.
+
+What bin contains?
+Binaries exe files.
+
+cd bin
+dir
+U can see Tomcat7.exe
+and bootstrap.jar and some 
+dll file,dll is binary 
+and exe files.
+
+cd lib
+There are so many jars
+In this we need 2 important jars
+jsp-api.jar
+servlet-api.jar
+
+These 2 jars actually contains all the implementations of your 
+servlet related api 
+and jsp api's
+
+What is servlet api?What is jdbc api?
+For jdbc implementaion what database [sic]needed for java they have given set of classes and interfaces.
+Some classes interfaces given under 2 packages
+called
+java.sql
+java[sic]
+
+And those implementations are provided by (who provided implementation for all the jdbc api)?
+Database Vendors.
+
+The implementations are packed into jar file.
+And when you are using a mysql you are using a jar file called mysql.jar
+In Oracle we are using OJDBC16.jar
+
+What these jar contains?
+What mysql.jar contains?
+Subclasses for all the jdbc api.
+In jdbc you have only interfaces.
+How many classes we have in jdbc?
+From jdbc api how many classes are there?
+Only 2 classes:
+1 is the typeClass,which has only constants.
+2 is DriverManagerClass
+
+All remaining interface only.
+So,someone has to provide a implemention for all the interfaces , subclasses.
+Subclasses are packed into the [sic].
+
+Similarly in servlet and jsp also,you have 99% interfaces only.
+Interfaces need subclasses
+Subclasses provided by corresponding server vendor.
+
+Those are packed into this jar files.
+jsp-api.jar 
+servlet-api.jar
+
+These two we will use,remaining are internal.
+lib has all the jar files required.
+and other folders important for us.
+
+One is logs:
+Server Logs:
+When your server is running.
+Internally whatsover things happening in server,will be logged into this logged files.
+We will see how to log files using log file generator.
+
+What is a log book in general?
+When you are coming to class, you are signing a attendence registry.
+Can I call this a log book
+So when you are coming you are writing your roll no.
+
+Similarly when your server is running,whatever it is doing,it will write the information in one simple text file.
+The file will be in this file.
+This folder logs
+dir logs
+These are some default logs:
+Simple text files only.
+
+U can just open with notepad.
+
+In the coming application we will see how the logs are coming.
+
+cd conf:
+Under conf we have 3 xml files:
+server.xml file
+web.xml file
+tomcat-users.xml file
+
+When you are writing security for your application:
+Then you need to write in tomcat-users.xml file
+U need to open this and 
+
+**********************************************************
+server.xml file:
+Your entire apache tomcat configuration is available in this.
+Open this using notepad only.
+We have customed port number right:
+Default port or something
+Suppose at the time of installtion,you want to modify the port numbers
+************
+Later  if you want change you can come back to this and change 
+
+So Connector Port we can see as 9999
+See below
+<!-- A "Connector" represents an endpoint by which requests are received
+         and responses are returned. Documentation at :
+         Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)
+         Java AJP  Connector: /docs/config/ajp.html
+         APR (HTTP/AJP) Connector: /docs/apr.html
+         Define a non-SSL HTTP/1.1 Connector on port 9999
+    -->
+
+If we have changed the connecton port information,it has write the information generated.
+and if you dint change at the time of installtion,it will write as 8080.
+
+Later after intallation you can come back here and change the installation to whatever you want.
+AJP Connector also changed.Default is 8009
+See below-->
+<!-- Define an AJP 1.3 Connector on port 9009 -->
+<Connector port="9009" protocol="AJP/1.3" redirectPort="8443" />
+
+Shutdown Port:
+<Server port="9005" shutdown="SHUTDOWN">
+
+*********************************************************
+This web.xml file is a similar file that contains all the information about all the applications running
+in the container.
+
+In one webcontainer,you can deploy multiple applications,say written 5 applications
+5 applications can be deployed into single Tomcat Server and every application will have one web.xml file.
+
+When you have 5 applications,there would be 5 web.xml files
+Every web-application  will have an web.xml file.
+
+Because configuration information will change from application to application.
+And any common information about all the web-applications you have to write inside this web.xml file.
+
+Something you have which is common for al 5 applications running in server,that you write under this web.xml file.
+Lets see the content of this web.xml
+
+ <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+session-config,session-timeout 30 which is specified with default you can set the default timeout in minutes for new applications,
+something like this,we have an application,
+Any idea what is the meaning of session timeout.
+Those who are using online banking they will know this right.
+When you login in any application,and for sometime,you are not doing any action,that session will be expired automatically.
+How much time it is taking?
+For a transaction it is very less,may 1 min or 2 min.
+
+So,depending on application you can set the time.
+If user is idle,not using application,not doing anything then,if you want to close the session automatically
+If you want to display the "session expired" what all message you want,that you can configure here.
+Defualt configured as 30 min.
+
+Once you open the application,and you need something,later for 30 min you are not doing any activity.
+Then automatically session will be expired.
+You cant access the application.
+
+If you want to change it now.
+You can change this now.
+Suppose I want to timeout in 15 mins.
+
+Just change this as:
+ 
+ <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>  
+
+So this information is given in conf folder.
+This is common to all the applications running in the server.
+
+Say in my Tomcat I have developed 5 applications,all 5 applications running but all 5 applications default session timeout is:
+15 mins only.
+But I have different requirement,5 applications running in my server.
+For 1 application I need 3 mins
+For other application I need 2 mins only.
+For other application I need 13 mins.
+For other applicaion some other time.
+
+Then you have to configure web.xml related to that specific application.
+For every application,there will be an web.xml file.
+You can configure that application.
+Anything common for all that application running in a container,we can configure that in web.xml which is under conf.
+
+So 4 folders we have seen:
+bin,conf,lib and logs
+
+
+And one more important is web-apps.
+and work also.
+
+
+cd web-apps
+
+Web app is the shortcut of web applications
+Now when you deploy any application,into server that application will come and sit in this folder only.
+You have written 5 applications,
+app1
+app2
+app3
+app4
+app5
+
+These are names of the application.
+When you deploy this 5 into server
+
+Your 5 applicatons will come and sit in this folder.
+web-app folder contains all the applications deployed into Tomcat.
+
+And currently they have written these applications:
+cd web-apps
+docs is 1 application
+examples,host-manager,manager,ROOT is the default application.
+
+So,like in your first example we have,we are developing an application ccwebapp.
+That ccwebapp will come in this webapps folder.
+
+cd ROOT:
+cd work
+***************************************************************************
+See Page 7 in Notes:
+configure tomcat =>
+Some display name showing=>u can change it or keep exactly it is
+startup type:
+Default is Automatic.
+Automatic means whenever your computer starts,whenever you switch on your computer,
+along with the computer startup os loading,your tomcat will aslo be ready.
+
+You have to stop that:
+But dont make it manual,manual is when you will start it will start.
+
+Because we will not start the tomcat with this approach.
+We will integrate this Tomcat with Eclipse,directly we will start the tomcat from Eclipse only.
+directly we will shutdown the tomcat from Eclipse only
+
+If it is automatically starting,again when you start from eclipse,it will give conflict.
+Same server port no...,we will get problem
+
+So,make the start up as manual, and click on start button now.
+
+Now Tomcat is running:http://localhost:9999/
+
+Now currently we cannot type domain name coursecube.com because it  is deployed somewhere.
+
+We have reached tomcat.Where is tomcat server running?
+In our machine only,so write as localhost.
+So with localhost,we will reach the computer,its running on the remote machine with an IP Address.
+It will go to the computer,in that computer which service has to get procesed,here we need a service as server whose 
+port number is 9999
+so http://localhost:9999/
+
+And if you are able to see this page,then your Tomcat is installed successfully and running successfully
+Tomcat is running now.
+
+Click on server status:
+Its asking now username password.
+
+Currently whatever applications running here,you can see alll the applicaion running here.
+Server Status:
+What is the type of memory used here?
+
+List Applications:
+What are the applications currently running?
+What applications running?
+How to check what are the applications running?
+If I ask you how many applications are running in this Tomcat?
+How you can tell that 
+Go to webapps
+And how many folders are there
+5 folders
+Each folder is 1 application
+One webapplication
+Root is 1 application
+manager is another application
+In that five different applicaton running under Tomcat.
+
+See https://localhost:9999/
+
+And now I am asking List of Applications
+its taking application name as
+"ROOT" they taken as a path slash(/)
+And running status as true.
+Any session running on the server
+
+Currently manager app has 1 session that is what we are using now.
+I user is using so one session is running.
+If 100 user using this it will show 100 sessions
+
+Other applications I am not using now
+So,it is showing as 0 sessions
+and other basic applications
+
+If you want to deploy any application from here you can do it from here.
+1.
+Deploy
+Deploy directory or WAR file located on server
+2. 
+WAR file to deploy
+
+We know how to create a jar file,like that we can write a web file,WAR
+After developing your webapplication you can create a WAR,you can upload the WAR here.
+
+The file will go and sit in the Tomcat.
+
+Configure:Stop
+
+***********************************************************
+Start our Application:
+
+Steps to develop and run first servlet example with servlet version 2.x
+2.0
+2.1
+2.2
+2.3
+
+And servlet 3 version onwards
+Annotation
+
+From servlet first version to 2.5
+Only servlet configuration can be done with xml
+
+From servlet 3.0 first time added annotation configuration.
+From 3.0 onwards you can configure with xml or annotation configuration.
+
+So will see now with xml version 2.x
+Everything same there is no change in developing the servlet class.
+
+And your html versions html tags are different.
+
+The biggest change from 2.x to 3.x is 
+Configuration style has changed.
+
+Instead of writing all in xml we can write short in annotation.
+
+We  need login.html file and LoginServlet.
+And LoginServlet has to be configured in the .xml file
+Three components to write.
+
+Will go for Eclipse now.
+
+Taking different workspace for servlets.
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+If you install JBOSS later,it will use the same port number.
+Because JBOSS later will also use the same port numbers.
+
+Since same port numbers with two servers cannot run in a single machine.
+We have to run one server with one port number.
+
+Transcript dated Servlet 7th Nov
+Contd.....:P
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+ 
+  
+
+
+ 
+    
+
+
+
+
+
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+ 
+
+
+      
+ 
+
+
+    
+  
+
+  
+
+  
+
+
+
+
+ 
+ 
+ 

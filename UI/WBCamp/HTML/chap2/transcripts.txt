@@ -1,0 +1,87 @@
+ HTML:
+ stands for Hyper Text Mark Up Language.
+ Struture and Content of A Page.
+ Not the styling,not the interactivity.
+ Just the structuring content.
+ 
+ Back in the academic community,in  the year of 1989,early 1990,this is
+ not exactly a hard start date to HTML.
+ But in that time,basically people worked changing papers,giant thesis papers,
+ scientific and technical documents.
+ And they all have very specific formatting but when they are being exchanged.
+ there was no way to actually send that formatting across the Internet.
+ 
+ So what I mean lets say you wanted to have a paper that looked like this and
+ this is a style guide I found on writing scientific papers.
+   
+ So lets just take the Abstract Section:
+ looks like a link to another part of the Paper.
+ and lastly we have got some nested bullet points.
+  
+ So this information if I want to send this to somebody.
+ But all that I could send is text  so I cant send an image of this.
+ I can't send the actual structure of it.
+ All I can send is some text,so that might look something like this.
+ The problem is how do I take this text here which is the same text 
+ over here and how do I encode the structure.
+ How do I say this Abstract added that in.
+ How do I say this is bold and biggr text.
+ And so as function.
+ And there is a bullet point right here.
+ And another bullet point right here.
+ So that is what HTML lets us do.
+ Its lets us take text and content and just by writing some other text on top 
+ of it.
+ It lets us specify exactly this is a heading,this is bald,this is italisized.
+ This is a link,link is actually very imortant thats where the name comes
+ from Hypertext MarkUp Language because HTML allows us to create 
+ hyperlinks and linking to documents together is really impotant.
+ Many scientific papers are gonna be referencing many scientific papers.
+ Foot notes and all sorts of citations.
+ HTML facilatated that and made a really big impact.
+ And then it basically caught on.
+ People realized its pretty simple.
+ Its not very intimidating thing.
+ So moved kind of away from purely academic situation to kind of broader use.
+ All the way up to [myspace] we could actually edit your profile using .html
+ So there are people who are absolutely not technical and they are still able to
+ write html,css to add some interesting features to the page to make some
+ customized visuals.
+
+ HTML allows us to that using HTML taGS.
+ 
+ <b></b> is depricated. Not supposed to use it anymore.
+  alernative:
+ The General Rule applies everywhere.
+ <tagName>Some Content</tagName> 
+ "This is my first tag!!"=> 
+  HTML is just text but your browser interprets it and turns it into something like 
+  this or this.
+  You can see that as it opens,its not showing me the actual html.
+  This isnt a valid document and that because we were missing the 
+  underlying structure that every page needs to have.
+  It looks like this:
+  It always the same.
+  It is taking the html and underlying into nice visual representation.
+  =>view source file CTRL + U.
+  Drag and drop works for .html files.
+  Sublime: html hit tab
+  Type: mdn doctype
+
+  
+
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  

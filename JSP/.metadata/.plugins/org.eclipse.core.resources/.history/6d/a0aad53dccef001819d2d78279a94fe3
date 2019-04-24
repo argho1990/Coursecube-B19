@@ -1,0 +1,8 @@
+package com.jlcindia;
+
+public class Student {
+	private int sid;
+	private String sname;
+	private long phone;
+
+}

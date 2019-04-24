@@ -1,0 +1,60 @@
+package com.telusko.basics;
+
+
+interface A{  //interface declaring a show method
+	
+ //void show(); //by default method is public abstract
+	public abstract void show();	
+}
+	
+	
+class B implements A{ // class which is defining a show method.
+	
+	public void show() {
+	System.out.println("show-method");	
+	}
+	                
+	public void display() {
+	System.out.println("display-method");	
+	}
+}
+
+
+public class LabInter1 {
+public static void main(String args[]){
+/*	B obj = new B();// obj can call both the methods.
+	obj.show();    
+	obj.display();
+//But th problem is I dont want any user to this method(show),the user 
+//should use this method() [display()],the user should only use this 
+//method.I am restricting to use this method.
+//and we can do it.
+//the interface has only one method and that is show():
+//Why cant I make an object of A?
+//Again it is not possible because	
+//To create objects we require Constructors and we have to define Constructors 	
+//And in interface we cannot define anything.
+//That means u cannot create create constructors.
+//That means u cannot use constructors.
+//That means you cannot create objects
+//But we can create reference because see to create reference you dont require constructors
+//That means if I say A obj this(obj) is the reference of A.
+//and if I am giving you a memory of B,it is possible
+*  Because whenever you say interface,to create object of interface we need memory.
+*  We creating the reference and the memory will be coming by B. 
+*  That means indirectly we have an object A.
+* 
+*  */
+A obj = new B();
+/*And this if I say */
+ obj.show(); //This will execute but when I say
+/* obj.display();*/ // This is not possible because display doesnt belong to A interface it belongs
+                    // to C and I am restricting this user from using this display.
+//This is why Interface are largely used and this the importance of Interface.
+//1 Interface helps you to use Multiple Interface in Java. 
+//2.It provides you security. 
+}
+
+}
+
+

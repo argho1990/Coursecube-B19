@@ -1,0 +1,72 @@
+//Abstract Class and Abstract Methods Part 2:
+
+package com.telusko.basics;
+
+public class Abstract2 {
+
+	public static void main(String[] args) {
+
+		Iphone obj = new Iphone();
+		show(obj);  
+		Samsung obj1 = new Samsung();
+		show(obj1); 
+	}
+	
+	/*The problem is why we need these two methods,both the method name is show.
+	 * and both are taking the object of phone right,Iphone is a phone and samsung is 
+	 * a phone.Then why to create these 2 methods.
+	 * What if we create just one method?
+	 * But the problem is if we create only one method,what should be the parameter.
+	 * To solve this problem we can use something called Abstraction.
+	 * Create a abstract class,called Phone in which we create on method,
+	 * called public abstract showConfig.
+	 * [class Iphone extends Phone] and [class Iphone extends Samsung]
+	 * So even if you pass object of Iphone this phone(Phone obj) will be excepted.
+	 * You can pass the object of subclass(Iphone and Samsung) in the reference of superclass. 
+	 * It is not compulsory to have the abstract method in Abstract Class.
+	 * You can have normal methods in Abstract Class.
+	 * */
+/*	
+	public static void show(Iphone obj) {
+		obj.showConfig();
+
+	}
+	
+	public static void show(Samsung obj) {
+		obj.showConfig();
+
+	}
+*/	
+	
+	public static void show(Phone obj) {
+		obj.showConfig();
+
+	}
+
+	
+}
+
+abstract class Phone{
+	
+	public abstract void showConfig();
+	
+	
+}
+
+class Iphone extends Phone{
+
+	public void showConfig() {
+
+		System.out.println("2 GB,IOS 9.3");
+
+	}
+}
+
+class Samsung extends Phone{
+
+	public void showConfig() {
+
+		System.out.println("2 GB RAM,Lollypop ");
+
+	}
+}

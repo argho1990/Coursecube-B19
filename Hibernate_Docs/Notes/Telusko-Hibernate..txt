@@ -1,0 +1,71 @@
+Hibernate Intro:
+If u want to make a software you have to make an object.
+It deals with the concept of inheritance,abstraction and polymorphism.
+So we talk about all this things when it comes to object.
+
+Now hold on when u want to store a data,so normally you want to store a data.
+You might be storing that in a file,which is your txt files.
+You might storing your data in xls file.
+You might be storing your data in DOC or CSV file.
+
+The problem is if your storing your data in all these formats,its is very difficult to fetch.
+very difficult to process.
+Dr Chord given those golden rules.
+Due to these,we have this concept of relational databases.
+
+So one the one hand we have object model and on the other side we have relational model.
+So we process data, we do all those software stuff with the help of objects.
+We store our data in a relational part,that means if you are living in this world and if want to connect your 
+software or application(s) which work with objects with the relational you have to connect them.
+Now is it that simple to connect.
+
+Now we done that before say we have RDBMS which is mysql,and you have Java on this side.
+So how do you connect your java and mysql.So we have this concept of jdbc(JAVA DATABASE CONNECTIVITY)
+So using this you can connect your Java Applicationa and Mysql.
+The problem starts when you want to connect this in an efficient way.
+When u say efficient way what it means think about developers now.
+Its is my job to write an application and save all those data in the tables.
+When you save it,it also means persists.
+We also want to achieve persistence.
+We want to store our data in the application into the database.
+Because in application we use variables,so normallly we store our data in variables,we have to make sure that data goes  
+into the table.
+In objects we have classes,on the other side,in the relational side we have tables,there we have a concept of fields.
+
+
+We have variables (RDBMS)on this side we have columns so table-columns.On this side we have objects,(RDBMS)in this side 
+we have rows-tuples,Now it is easy to map it right.
+We have class, we have table,we have variables,we have fields,but can you implement all those OPPS concept.
+  
+What about Inheritance,what about polymorphism,how can you achieve that on Tables?
+So this people,industry people wanted a mapping tool,where you can map your objects & relational properly.
+
+So thats why we have a concept of ORM?
+Object Relational Mapping;
+When we say ORM,its just a concept,we wanted an implementation and thats why we wanted an ORM Tool.
+So we have a tool which is hibernate.
+So we have a tool like JPA,iBATIZ,Toplink.
+We have all of these tools and one of the best tool is Hibernate.
+So as per the ranking the best tool is hibernate.
+Again,there is a big debate on this well.its hibernate 
+So if you know hibernate,you can learn the other things as well.
+So what hiberanate does is that it does the mapping between the object world and the relatioal world.
+****************************************************************************************************
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
