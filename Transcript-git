@@ -38,3 +38,53 @@ commit 9702e07413d983fb6d70c66d9d1eeb029758ab6f
 
 Branch:
 create branch on this page.
+
+Branch 2:
+Branch:See Image 1:
+create branch on this page.
+History:
+Commit directly to the Transcript-git_branched branch
+b8horpet has decided to make it own change.
+
+See Image 2:
+bring it back to master.
+[Transcript-git_branched] 
+
+
+=>pull request and a merge request.
+=>pushing and pulling are important 
+  terms in github.
+
+=>pushing kind of being like sending something to somebody.
+
+=> pulling being something from somebody.
+
+=>In some ways they are almost  interchangeable.
+
+[Transcript-git_branched] 
+will you please,request is the key terms here:
+will you please take my changes and pull them into master.
+
+I am just making a request to myself.later you would see two different people.
+
+button:
+compare and pull request.
+
+I want what I just did in [Transcript-git_branched]
+to go back into the main branch.
+
+A request to merge those changes in the [Transcript-git_branched]
+back to the master branch.
+
+Steps:
+
+Compare changes:
+base master <= compare:Transcript-git_branched
+
+Open a pull request:
+
+Write a caption:
+
+Create a pull request.
+Merge Pull Request.
+
