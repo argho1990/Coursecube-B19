@@ -1,0 +1,33 @@
+git: its keeps track of the entire history of things that you are working on your computer
+[version control]
+
+collboration: 
+advanced and sophisticated tools for collaboration.
+doesnt has any problem for 2 people working on the same document at the same time.
+
+This is a system to keep track of history of the project as well as many people to collaborate on the project.
+together.
+
+Git vs Github:
+Git is the actual version control software.
+actual application invented by the guy who invented Linux.
+countless examples of version control systems.
+
+Github is a website or webservice where you can sign up and have an account.
+=> do git things on a server or a website.
+=> github kinds of runs the git software behind the scenes.
+=> social coding 
+=> social network for projects that are managed through git.
+How to use Github to all the things that git does?
+"You can spend your life being a Git Person and never ever go to the GIT website 
+                                    or
+"You can also spend all the time on the Github website and never actually run GIT 
+ anywhere else."
+
+"Learn git and the Git concepts through the Git Interface".
+and later see how those concepts locally to your own computer.
+
+A Github repository is another name of a project which can have multiple files associated with it.
+=> Its a repository of files.
+=>Git cant have spaces in between their names.
+Go to New file and put the text.
